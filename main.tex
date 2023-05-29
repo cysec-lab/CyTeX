@@ -1,0 +1,70 @@
+\documentclass[Japanese]{dicomopapers}
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{latexsym}
+\usepackage{bmpsize}
+\usepackage{url}
+\usepackage{comment}
+\usepackage{amsmath}
+\usepackage{listings,jvlisting}
+% \usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{caption} 
+\captionsetup[table]{skip=0pt}
+\lstset{
+  basicstyle={\ttfamily},
+  identifierstyle={\small},
+  commentstyle={\smallitshape},
+  keywordstyle={\small\bfseries},
+  ndkeywordstyle={\small},
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  numbers=left,
+  xrightmargin=0zw,
+  xleftmargin=3zw,
+  numberstyle={\scriptsize},
+  stepnumber=1,
+  numbersep=1zw,
+  lineskip=-0.5ex
+}
+
+\makeatletter
+\newcommand\newblock{\hskip .11em\@plus.33em\@minus.07em}
+\makeatother
+\def\Underline{\setbox0\hbox\bgroup\let\\\endUnderline}
+\def\endUnderline{\vphantom{y}\egroup\smash{\underline{\box0}}\\}
+\def\|{\verb|}
+
+\newcommand{\code}[1]{ \texttt{\detokenize{#1}} }
+
+\begin{document}
+
+\title{たいとる}
+\etitle{English title}
+
+\affiliate{RITS_GRAD}{立命館大学大学院情報理工学研究科\\Graduate School of Infomation Science and Engineering, Ritsumeikan University}
+\affiliate{RITS_UNIV}{立命館大学情報理工学部\\College of Infomation Science and Engineering, Ritsumeikan University}
+
+\author{星名 藍乃介}{RANNOSUKE HOSHINA}{RITS_GRAD}[hoshina@cysec.cs.ritsumei.ac.jp]
+\author{上原 哲太郎}{TETSUTARO UEHARA}{RITS_UNIV}[t-uehara@fc.ritsumei.ac.jp]
+
+\begin{abstract}
+  \input{sections/abstract.tex}
+\end{abstract}
+
+\maketitle
+
+\input{sections/introduction.tex}
+\input{sections/background.tex}
+\input{sections/investigation.tex}
+\input{sections/method.tex}
+\input{sections/implementation.tex}
+\input{sections/evaluation.tex}
+\input{sections/conclusion.tex}
+
+\bibliographystyle{ipsjunsrt}
+\bibliography{sections/reference}
+
+\end{document}
