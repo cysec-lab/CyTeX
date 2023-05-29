@@ -1,33 +1,60 @@
-# DICOMO 2023 論文執筆環境
+# CyTeX
 
-## Requirement
+CyTeX（読み方：さいてふ）は、GitHub Codespaces を用いた日本語用の LaTeX 論文執筆環境です。
+ローカル環境に texlive や Docker をインストールする手間なく、GitHub Codespace 上のクラウド開発環境に LaTeX 環境を構築できます。
+Codespace 環境ではなく、Docker や devContainer を用いてローカル環境に構築することも可能です。
 
-ローカル環境で以下が使用可能であること。
+## branch 構成
 
-- docker
+本プロジェクトでは、論文執筆活動で使用するテンプレートを branch ごとに管理しています。
+使用したいテンプレートを選択した上で fork してください。
+以下に branch の一覧を記載します。
+
+- [`dicomo2023`](https://github.com/cysec-lab/CyTeX/tree/dicomo2023): DICOMO 2023 用テンプレート
+- (逐次追加)
+
+## 基本技術スタック
+
+- GitHub Codespace / devContainer
+- docker / docker compose
+- texlive
 - VSCode
-- git
+- LaTeX Workshop VSCode Extension
 
-以下の環境で動くことを確認済み。
+## 使用手順
 
-- MacOS / ARM
-- Ubuntu20.04 / Intel
+以下の 2 通りの使用方法があります。
 
-## 環境構築
-
-```sh
-git clone git@github.com:Ran350/dicomo2023.git
-code dicomo2023/thesis
-```
-
-「コンテナーで再度開く」をクリックして、devContainer を起動する。
-初回起動時は docker コンテナのビルドに時間がかかる可能性があるので注意。
+- [Codespaces を用いてクラウド開発環境に構築する](how_to_use_codespace.md)
+  - 推奨。環境構築が最も容易
+  - 注意。[無料で使用できる月間ストレージとコア時間](https://docs.github.com/ja/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts) に上限がある
+  - 上限に達した場合、以下の方法か、他の執筆環境を構築する必要がある
+- [devContainer を用いてローカル環境に構築する](how_to_use_devContainer.md)
 
 ## ビルド
 
-以下の 2 種類の方法でビルドできる。
+以下の 2 種類の方法でビルドできます。
 
-- `.tex` ファイルを保存（`Ctrl + S` or `⌘ + S`）
-- devContainer 内のターミナルで `latexmk ./main.tex` を実行する
+- `*.tex` ファイルを保存する（`Ctrl + s` or `⌘ + s`）
+- ターミナルで `latexmk ./main.tex` を実行する
 
-`out/` に `main.pdf` が生成される。
+ビルドすると、`out/` に PDF ファイルが生成されます。
+
+## git commit / push
+
+VSCode では、以下の手順で git `add` `commit` `push` できます。
+
+- サイドバーの<img width="30px" src="image/vscode-git-icon.png"/>を選択する
+- commit するファイルの`+`ボタンを選択して git add
+- commit メッセージ入力欄に記入する
+- `Ctrl + Enter` (or `⌘ + Enter`) で git commit
+- `Ctrl + Shift + P` (or `⌘ + Shift + P`)でコマンドパレットを開き、`Git Push`を選択して git push
+
+## Contribute
+
+1. 不具合・要望を記載した[issue](https://github.com/cysec-lab/CyTeX/issues) を作成する。
+2. リポジトリを fork した上、Pull Request する。
+
+## Author
+
+[Ran350](https://github.com/Ran350/)
