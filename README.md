@@ -4,9 +4,16 @@
 
 </div>
 
+
 CyTeX（読み方：さいてふ）は、GitHub Codespaces を用いた、環境構築が容易な日本語用の LaTeX 論文執筆環境です。
 ローカル環境に texlive や Docker をインストールせずに、GitHub Codespace 上のクラウド開発環境に LaTeX 環境を構築できます。
 また、devContainer を用いて、Codespace 環境ではなくローカル環境に構築することも可能です。
+
+<div align="center">
+  
+https://github.com/cysec-lab/CyTeX/assets/56746857/589c5472-79f7-4e35-9753-ef0329050764
+
+</div>
 
 ## branch 構成
 
