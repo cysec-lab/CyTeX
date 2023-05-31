@@ -45,8 +45,17 @@ https://github.com/cysec-lab/CyTeX/assets/56746857/589c5472-79f7-4e35-9753-ef032
 
 ```sh
 git clone --depth 1 -b ブランチ名 https://github.com/cysec-lab/CyTeX.git
-git branch -m main
-git remote set-url origin https://github.com/ユーザ名/リポジトリ名.git
+rm -rf CyTeX/.git
+mv CyTeX 作成した作業用リポジトリ名
+cd 作成した作業用リポジトリ名
+git init
+```
+
+- 作成したリポジトリのページ内の `push an existing repository from the command line`の下に記載のコマンドを実行する
+
+```sh
+git remote add origin https://github.com/ユーザ名/リポジトリ名.git
+git branch -M main
 git push -u origin main
 ```
 
