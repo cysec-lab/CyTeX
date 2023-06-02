@@ -4,11 +4,11 @@
 
 以下がインストール済みであること。
 
-- VSCode
-- VSCode 拡張機能 [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 - Codespaces 対応ブラウザ（Chromium 系、firefox、safari）
-- VSCode で GitHub アカウントにログイン済み
-  - VSCode サイドバーの<img width="30px" src="image/account.png"/>アイコンからログインできる
+- VSCode で執筆する場合のみ
+  - VSCode 拡張機能 [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+  - VSCode で GitHub アカウントにログインしておくこと
+    - VSCode サイドバーの<img width="30px" src="image/account.png"/>アイコンからログインできる
 
 ## 手順
 
