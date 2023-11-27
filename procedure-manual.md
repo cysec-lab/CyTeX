@@ -79,19 +79,31 @@
 - [論文における提案手法の書き方 #論文 - Qiita](https://qiita.com/NaokiAkai/items/e607e8e79949b1e11f95)
   > 提案手法には一般的なことを書く
   > 実装には実際にどの様にそれを実現したかを書く
-- [卒・修論に見られる良くない表現](https://www.sci.hokudai.ac.jp/~minobe/class/bad_expressions.htm)
-- [LaTeX における正しい論文の書き方 #LaTeX - Qiita](https://qiita.com/birdwatcher/items/5ec42b35d84d3ee2ffbb)
 
 先輩たちの資料を見たいときはここにあります。
 
 - [サイバーセキュリティ研究室内部ページ - 卒論・修論](https://sites.google.com/cysec.cs.ritsumei.ac.jp/local/%E8%AB%96%E6%96%87%E7%99%BA%E8%A1%A8%E4%BC%9A%E9%96%A2%E9%80%A3/%E8%AB%96%E6%96%87%E7%99%BA%E8%A1%A8%E4%BC%9A%E8%B3%87%E6%96%99/%E5%8D%92%E8%AB%96%E4%BF%AE%E8%AB%96?authuser=2&pli=1)
 - [サイバーセキュリティ研究室内部ページ - 論文発表会資料](https://sites.google.com/cysec.cs.ritsumei.ac.jp/local/%E8%AB%96%E6%96%87%E7%99%BA%E8%A1%A8%E4%BC%9A%E9%96%A2%E9%80%A3/%E8%AB%96%E6%96%87%E7%99%BA%E8%A1%A8%E4%BC%9A%E8%B3%87%E6%96%99/%E8%AB%96%E6%96%87%E7%99%BA%E8%A1%A8%E4%BC%9A%E8%B3%87%E6%96%99?pli=1&authuser=2)
 
-### レビューでブラッシュアップせよ
+## レビューでブラッシュアップせよ
 
-- こまめにフィードバックをもらうべし
-  - 章構成と内容の骨組みができたらレビュー
-  - 学生&先生両方から
+こまめにフィードバックをもらうべし。
+章構成と内容の骨組みができたらレビュー、N 章ができたらレビュー。
+学生&先生両方からもらおう。
+
+### チェック項目
+
+- [修士論文提出前の原稿チェックリスト内容編 - Google ドキュメント](https://docs.google.com/document/d/1YTgCme-9dwt2woAEOVX3MfOJutP2CgiJbEKGQi5nM3c/edit#heading=h.pfz4xdrzkyal)
+- [卒・修論に見られる良くない表現](https://www.sci.hokudai.ac.jp/~minobe/class/bad_expressions.htm)
+- [LaTeX における正しい論文の書き方 #LaTeX - Qiita](https://qiita.com/birdwatcher/items/5ec42b35d84d3ee2ffbb)
+
+### GitHub でレビューを受けたい場合
+
+#### GitHub Issue でレビューを受けたい場合
+
+ここに Permalink を貼り付ける方法
+
+#### Pull Request でのレビューを受けたい場合
 
 ## Tips
 
@@ -101,6 +113,13 @@
 - textlint
 - Word
 - ChatGPT
+
+### LaTeX
+
+- [Create LaTeX tables online](https://www.tablesgenerator.com/latex_tables)
+- [LaTeXify Web](https://latexify.predicate.jp/)
+- [Mathpix](https://mathpix.com/pricing)
+- [LaTeX にソースコードを【美しく】貼る方法 #LaTeX - Qiita](https://qiita.com/ta_b0_/items/2619d5927492edbb5b03)
 
 ### VSCode で執筆する人向け
 
