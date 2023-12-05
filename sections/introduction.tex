@@ -1,2 +1,74 @@
-CyTeX の template/bachelor-2024は，2024年度の学士論文用のテンプレートです．
+CyTeX の template/bachelor-2024は，2024年度の学士論文用のテンプレートである．
+あくまでテンプレートであるため，章構成やディレクトリ構成等は自由に変更してよい．
+
+
+\section{よく使うTeX構文}
+よく使うTeXの記述例を示す．
+詳しくは，TeX Wiki\cite{TeXWiki}を参照されたい．
+
+\begin{itemize}
+    \item itemize1
+    \item itemize2
+    \item itemize3
+\end{itemize}
+
+\begin{enumerate}
+    \item enumerate1
+    \item enumerate2
+    \item enumerate3
+\end{enumerate}
+
+図\ref{fig:tetsutaro-logo1}，図\ref{fig:tetsutaro-logo2}，図\ref{fig:tetsutaro-logo3}にテツ太郎ロゴを示す．
+
+\begin{figure}[tb]
+    \centering
+    \includegraphics[clip,width=5cm]{assets/introduction/tetsutaro-logo.png}
+    \caption{テツ太郎ロゴ}
+    \label{fig:tetsutaro-logo1}
+\end{figure}
+
+
+\begin{figure}[tb]
+    \begin{minipage}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[width=30mm]{assets/introduction/tetsutaro-logo.png}
+        \subcaption{テツ太郎ロゴ2}
+        \label{fig:tetsutaro-logo2}
+    \end{minipage}
+    \begin{minipage}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[width=30mm]{assets/introduction/tetsutaro-logo.png}
+        \subcaption{テツ太郎ロゴ3}
+        \label{fig:tetsutaro-logo3}
+    \end{minipage}
+    \caption{テツ太郎ロゴ}
+\end{figure}
+
+表\ref{tab:example}に表の例を示す．
+
+\begin{table}[tb]
+    \caption{表の例}
+    \label{tab:example}
+    \hbox to\hsize{\hfil
+        \begin{tabular}{l|lll}\hline\hline
+                 & column1  & column2  & column3  \\\hline
+            row1 & item 1,1 & item 2,1 & ---      \\
+            row2 & ---      & item 2,2 & item 3,2 \\
+            row3 & item 1,3 & item 2,3 & item 3,3 \\
+            row4 & item 1,4 & item 2,4 & item 3,4 \\\hline
+        \end{tabular}\hfil}
+\end{table}
+
+ソースコードの例をListing\ref{list:example}に示す．
+
+\begin{figure}[tb]
+    \begin{lstlisting}[language=Python, caption={ソースコードの例}, label={list:example}]
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(0, 2*np.pi)
+y = np.sin(x)
+\end{lstlisting}
+\end{figure}
+
 
