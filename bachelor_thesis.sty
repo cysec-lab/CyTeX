@@ -1,0 +1,49 @@
+%       卒業研究報告書原稿用スタイルファイル
+
+\def\年度#1{\gdef\@year{#1}}
+\def\学期#1{\gdef\@semester{#1}}
+\def\題目#1{\gdef\@title{#1}}
+\def\指導教員#1{\gdef\@teacher{#1}}
+\def\クラス#1{\gdef\@class{#1}}
+\def\コース#1{\gdef\@course{#1}}
+% \def\学科#1{\gdef\@faculty{#1}} % 12カリ学生は学科を記載
+% \def\回生#1{\gdef\@grade{#1}}
+\def\学籍番号#1{\gdef\@IDcode{#1}}
+\def\氏名#1{\gdef\@author{#1}}
+
+
+\newlength{\coverheight}
+\setlength{\coverheight}{\textheight}
+
+\def\maketitle{\begin{titlepage}
+
+        \vbox to\coverheight{%
+            \begin{center}
+                {\Huge 卒　業　論　文 \par} \vskip 6em
+                    {{\bfseries\Huge \@title\\}}
+                \vfil
+                \begin{tabular}{rl}
+                    {\Large 指導教員:} & {{\LARGE \@teacher}} \\ \\
+                \end{tabular}\\
+                \vfil
+                {\LARGE 立命館大学 情報理工学部\\}
+                \vskip 1em
+                    {\LARGE 卒業研究3 (\@class)\\}
+
+                \begin{tabular}{rl}
+                    \\ \\
+                    {\large コース:}   & {{\LARGE \@course}}  \\ \\
+                    % {\large 学科:}& {{\LARGE \@faculty}} \\ \\
+                    % {\large コース:}& {{\LARGE \@course \ (\@grade 回生)}} \\ \\
+                    {\large 学生証番号:} & {{\LARGE \@IDcode}}  \\ \\
+                    {\large 氏名:}    & {{\LARGE \@author }} \\ \\
+                \end{tabular}\\
+            \end{center}
+        }
+
+    \end{titlepage}
+
+    \let\maketitle\relax}
+
+
+
