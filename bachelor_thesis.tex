@@ -1,0 +1,132 @@
+\documentclass[10pt]{jreport}
+
+\usepackage{bachelor_thesis}
+% A4 : width 21cm, height 29.7cm
+\usepackage[a4paper,textheight=21.7cm,top=3cm,left=2cm,right=2cm,headheight=15pt]{geometry}
+
+\usepackage{etoolbox}
+\usepackage{cite}
+\usepackage{tipa}
+\usepackage{amsmath}
+\usepackage{comment}
+\usepackage[dvipdfmx]{graphicx}
+
+% \usepackage[utf8]{inputenc}
+% \usepackage{natbib}
+\usepackage{here}
+% \usepackage{minted}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage[subrefformat=parens]{subcaption}
+% \usepackage{siunitx}
+\usepackage{listings,jvlisting}
+% \definecolor{bg}{HTML}{282828}
+
+
+
+\usepackage{caption}
+% \captionsetup[table]{skip=0pt}
+
+\lstset{
+  basicstyle={\ttfamily},
+  identifierstyle={\small},
+  commentstyle={\smallitshape},
+  keywordstyle={\small\bfseries},
+  ndkeywordstyle={\small},
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  numbers=left,
+  xrightmargin=0zw,
+  xleftmargin=3zw,
+  numberstyle={\scriptsize},
+  stepnumber=1,
+  numbersep=1zw,
+  lineskip=-0.5ex
+}
+
+\newcommand{\code}[1]{ \texttt{\detokenize{#1}} }
+
+\makeatletter
+\patchcmd{\chapter}{\if@openleft\cleardoublepage\else\if@openright\cleardoublepage\else\clearpage\fi\fi}{}{}{}
+\makeatother
+
+
+\年度{2023}
+\学期{秋}
+\題目{論文タイトル}
+\指導教員{上原哲太郎}
+\クラス{BA}
+\コース{セキュリティ・ネットワーク}
+% \学科{情報システム}
+% \回生{4}
+\学籍番号{2600200000-0}
+\氏名{立命 太郎}
+
+
+\begin{document}
+\maketitle
+
+\input{sections/abstract.tex}
+\clearpage
+\tableofcontents
+\clearpage
+
+% 図目次
+% \listoffigures
+% \clearpage
+
+% 表目次
+% \listoftables
+% \clearpage
+
+\chapter{はじめに}
+\input{sections/introduction.tex}
+\clearpage
+
+
+\chapter{研究背景}
+\input{sections/background.tex}
+\clearpage
+
+\chapter{準備}
+\input{sections/preparation.tex}
+\clearpage
+
+\chapter{予備調査}
+\input{sections/investigation.tex}
+\clearpage
+
+\chapter{提案手法}
+\input{sections/method.tex}
+\clearpage
+
+\chapter{実装}
+\input{sections/implementation.tex}
+\clearpage
+
+\chapter{評価}
+\input{sections/experiment.tex}
+\clearpage
+
+\chapter{考察と今後の展望}
+\input{sections/discussion.tex}
+\clearpage
+
+\chapter{おわりに}
+\input{sections/conclusions.tex}
+\clearpage
+
+\chapter*{謝辞}
+\input{sections/acknowledged.tex}
+\clearpage
+
+\renewcommand{\bibname}{参考文献}
+\bibliography{sections/reference}
+\bibliographystyle{junsrt}
+
+% \chapter*{付録}
+% \input{appendix.tex}
+
+\end{document}

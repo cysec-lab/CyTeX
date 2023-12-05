@@ -1,0 +1,19 @@
+.DS_Store
+ 
+# out ディレクトリ以下の pdf ファイル以外
+out/*
+!out/*.pdf
+
+### LaTeX ###
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
