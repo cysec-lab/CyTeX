@@ -13,6 +13,8 @@
   // 	"description": "Log output to console"
   // }
 
+  // prefix で指定した文字列を入力すると，body で指定した文字列が挿入される．
+
   "deviding-line": {
     "prefix": "dividing-line",
     "body": ["% -------------------------------------------------------- % "],
