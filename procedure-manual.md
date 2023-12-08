@@ -72,8 +72,7 @@
   - [GitHub にアップロードする (git push)](<https://scrapbox.io/interaction-lab-git/GitHub_%E3%81%AB%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B_(git_push)>)
 - Git の入門サイト: [サル先生の Git 入門](https://backlog.com/ja/git-tutorial/)
 
-詳しく勉強した場合は（リファレンス）．
-もしくは，ChatGPT に「Git で〜したい時はどうすれば良い？」って聞いてみるのもいいかも．
+困った時は，ChatGPT に「Git で〜したい時はどうすれば良い？」って聞いてみるのもいいかも．
 
 ### Git の心得
 
@@ -166,7 +165,6 @@ base/head branch について知りたい場合は以下をご参照ください
 - [LaTeXify Web](https://latexify.predicate.jp/): Python のコードを LaTeX 形式に変換してくれるサイト．
 - [Mathpix](https://mathpix.com/pricing): OCR で画像の数式を読み取り，LaTeX 形式に変換してくれるサイト．
 - [BibTeX entry from URL](https://chromewebstore.google.com/detail/bibtex-entry-from-url/mgpmgkhhbjgkpnanlmlhibjfgpdpgjec?hl=ja)：閲覧ページの BibTex 項目を自動生成してくれる Chrome 拡張機能．
-
 - [LaTeX にソースコードを【美しく】貼る方法 #LaTeX - Qiita](https://qiita.com/ta_b0_/items/2619d5927492edbb5b03)
 
 ### VSCode で執筆する人向け
@@ -178,6 +176,7 @@ VSCode では GUI から Git の操作ができる．
 
 他にも便利な拡張機能が
 
+- [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop): VSCodeにLaTeXの統合環境を作る拡張機能．コード補完やコードフォーマット, pdf プレビューなどの便利な機能を提供
 - [Japanese Language Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ja)：VSCode を日本語化してくれる．
 - [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)：GitHub Pro への登録が必要（学生無料）
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)：英単語の綴りミスを見つけてくれる．
