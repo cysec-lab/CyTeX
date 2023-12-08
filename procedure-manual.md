@@ -67,10 +67,11 @@
 
 - [Git 講習会 - scrapbox](https://scrapbox.io/interaction-lab-git/%E7%9B%AE%E6%AC%A1)
   - [Git とは何か](https://scrapbox.io/interaction-lab-git/Git%E3%81%A8%E3%81%AF%E4%BD%95%E3%81%8B)
+  - [Git操作の基本的な流れ](https://scrapbox.io/interaction-lab-git/Git操作の基本的な流れ)
   - [ファイルのステージング (git add)](<https://scrapbox.io/interaction-lab-git/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8%E3%83%B3%E3%82%B0_(git_add)>)
   - [コミットする (git commit)](<https://scrapbox.io/interaction-lab-git/%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%99%E3%82%8B_(git_commit)>)
   - [GitHub にアップロードする (git push)](<https://scrapbox.io/interaction-lab-git/GitHub_%E3%81%AB%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B_(git_push)>)
-- Git の入門サイト: [サル先生の Git 入門](https://backlog.com/ja/git-tutorial/)
+- [サル先生の Git 入門](https://backlog.com/ja/git-tutorial/)
 
 困った時は，ChatGPT に「Git で〜したい時はどうすれば良い？」って聞いてみるのもいいかも．
 
