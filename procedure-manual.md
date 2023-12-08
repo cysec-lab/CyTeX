@@ -65,8 +65,17 @@
 
 ### Git の使い方
 
+最低限覚えたい概念
+
+- [Git とは何か](https://scrapbox.io/interaction-lab-git/Git%E3%81%A8%E3%81%AF%E4%BD%95%E3%81%8B)
+- git init: ワークスペースを作成する操作
+- git add: 記録する変更を選ぶ操作
+- git commit: 変更を記録する操作
+- git push: 記録した変更をリモートリポジトリに共有する操作
+
+Git入門資料
+
 - [Git 講習会 - scrapbox](https://scrapbox.io/interaction-lab-git/%E7%9B%AE%E6%AC%A1)
-  - [Git とは何か](https://scrapbox.io/interaction-lab-git/Git%E3%81%A8%E3%81%AF%E4%BD%95%E3%81%8B)
   - [Git操作の基本的な流れ](https://scrapbox.io/interaction-lab-git/Git操作の基本的な流れ)
   - [ファイルのステージング (git add)](<https://scrapbox.io/interaction-lab-git/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8%E3%83%B3%E3%82%B0_(git_add)>)
   - [コミットする (git commit)](<https://scrapbox.io/interaction-lab-git/%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%99%E3%82%8B_(git_commit)>)
