@@ -1,6 +1,6 @@
 <div align="center">
 
-# ![CyTeX](image/CyTeX.svg)
+# ![CyTeX](docs/image/CyTeX.svg)
 
 </div>
 
@@ -64,9 +64,9 @@ git push -u origin main
 
 以下 2 通りの方法があります。
 
-1. [Codespaces を用いてクラウド開発環境に構築する方法](how_to_use_codespace.md)（推奨）
+1. [Codespaces を用いてクラウド開発環境に構築する方法](docs/how_to_use_codespace.md)（推奨）
    - 注意：[無料で使用できる月間ストレージとコア時間](https://docs.github.com/ja/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts) の上限に達した場合、2 の方法か、他の執筆環境を構築する必要がある
-2. [devContainer を用いてローカル環境に構築する方法](how_to_use_devContainer.md)
+2. [devContainer を用いてローカル環境に構築する方法](docs/how_to_use_devContainer.md)
 
 ### ビルド
 
@@ -81,7 +81,7 @@ git push -u origin main
 
 VSCode では、以下の手順で git `add` `commit` `push` できます。
 
-- サイドバーの<img width="30px" src="image/vscode-git-icon.png"/>を選択する
+- サイドバーの<img width="30px" src="docs/image/vscode-git-icon.png"/>を選択する
 - commit するファイルの`+`ボタンを選択して git add
 - commit メッセージ入力欄に記入する
 - `Ctrl + Enter` (or `⌘ + Enter`) で git commit
