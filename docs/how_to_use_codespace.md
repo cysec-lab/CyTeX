@@ -12,18 +12,16 @@
 
 ## 手順
 
-- 作成した作業用リポジトリで Codespace を作成する
+1. 作成した作業用リポジトリで Codespace を作成する
 
-  - `<>` ボタン > `Codespaces` タブ > `＋` ボタン押下
+   - `Code<>` ボタン > `Codespaces` タブ > `＋` ボタン押下
+     <img width="300px" src="image/create-codespace.png"/>
+   - codespace 用のウィンドウが開かれ、ビルドが始まる
+   - ビルドが完了すると、ブラウザ版 VSCode が起動する
+   - ブラウザで執筆する場合は以上で環境構築完了
 
-    <img width="300px" src="image/create-codespace.png"/>
+2. さらに、ブラウザではなく VSCode で編集したい場合は
 
-  - codespace 用のウィンドウが開かれ、ビルドが始まる
-  - ビルドが完了すると、ブラウザ上で VSCode が起動する
+   - VSCode の画面左下の `><`アイコン > `Connect to Codespace` から作成した Codespace を選択する
 
-- ブラウザで執筆する場合は以上で環境構築完了
-- さらに、ブラウザではなく VSCode で編集したい場合は
-
-  - VSCode の画面左下の `><`アイコン > `Connect to Codespace` から fork した Codespace を選択する
-
-    <img width="200px" src="image/vscode_><.png"/>
+        <img width="200px" src="image/vscode_><.png"/>
