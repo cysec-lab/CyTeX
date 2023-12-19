@@ -1,0 +1,106 @@
+{
+    // Place your snippets for latex here. Each snippet is defined under a snippet name and has a prefix, body and
+    // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+    // same ids are connected.
+    // Example:
+    // "Print to console": {
+    // 	"prefix": "log",
+    // 	"body": [
+    // 		"console.log('$1');",
+    // 		"$2"
+    // 	],
+    // 	"description": "Log output to console"
+    // }
+    "deviding-line": {
+        "prefix": "dividing-line",
+        "body": [
+            "% -------------------------------------------------------- % "
+        ],
+        "description": "区切り線"
+    },
+    "itemize": {
+        "prefix": "itemize",
+        "body": [
+            "\\begin{itemize}",
+            "    \\item $1",
+            "\\end{itemize}"
+        ],
+        "description": "箇条書き"
+    },
+    "input-soruce-code": {
+        "prefix": "input-source-code",
+        "body": [
+            "\\begin{figure}[tb]",
+            "    \\centering",
+            "    \\lstinputlisting[caption=$1, label=list:$2]{$3}",
+            "\\end{figure}"
+        ],
+        "description": "ソースコードの読み込み"
+    },
+    "source-code": {
+        "prefix": "source-code",
+        "body": [
+            "\\begin{figure}[tb]",
+            "\\begin{lstlisting}[language=$1, caption={$2}, label={list:$3}]",
+            "$4",
+            "\\end{lstlisting}",
+            "\\end{figure}"
+        ],
+        "description": "ソースコード"
+    },
+    "minted-source-code": {
+        "prefix": "minted-source-code",
+        "body": [
+            "\\begin{listing}[tb]",
+            "\\begin{minted}[bgcolor=bg]{$1}",
+            "$2",
+            "\\end{minted}",
+            "\\caption{$3}",
+            "\\label{list:$4}",
+            "\\end{listing}"
+        ],
+        "description": "色付きソースコード"
+    },
+    "figure": {
+        "prefix": "figure",
+        "body": [
+            "\\begin{figure}[tb]",
+            "  \\centering",
+            "  \\includegraphics[clip,width=$1]{assets/$2.png}",
+            "  \\caption{$3}",
+            "  \\label{fig:$4}",
+            "\\end{figure}"
+        ],
+        "description": "図"
+    },
+    "row-figure": {
+        "prefix": "row-figure",
+        "body": [
+            "\\begin{figure}[tb]",
+            " \\begin{minipage}{0.5hsize}",
+            "  \\centering",
+            "  \\includegraphics[width=70mm]{$1}",
+            "  \\caption{$2}",
+            "  \\label{fig:$3}",
+            " \\end{minipage}",
+            " \\begin{minipage}{0.5hsize}",
+            "  \\centering",
+            "  \\includegraphics[width=70mm]{$4}",
+            "  \\caption{$5}",
+            "  \\label{fig:$6}",
+            " \\end{minipage}",
+            "\\end{figure}"
+        ],
+        "description": "横並びの図"
+    },
+    "formula": {
+        "prefix": "formula",
+        "body": [
+            "\\begin{eqnarray}",
+            "  $1",
+            "\\end{eqnarray}"
+        ],
+        "description": "数式"
+    },
+}
