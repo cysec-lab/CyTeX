@@ -1,74 +1,59 @@
-CyTeX の template/bachelor-2024は，2024年度の学士論文用のテンプレートである．
-あくまでテンプレートであるため，章構成やディレクトリ構成等は自由に変更してよい．
+品川政太朗先生や中田先生の文献を参考に，各章の書き方をそれぞれの章で説明しています．
+この章では，論文全体の書き方および「はじめに」の書き方について説明します．
 
+\section{本研究の全体像}
+論文をいきなり書くのは大変です．論文を書き始める前に，
+以下にしたがって研究の大まかなまとめを書いてみてください．
 
-\section{よく使うTeX構文}
-よく使うTeXの記述例を示す．
-詳しくは，TeX Wiki\cite{TeXWiki}を参照されたい．
+\subsection*{本研究のコンセプト：ポイント・主張したいことは何か？}
+xxx
 
-\begin{itemize}
-    \item itemize1
-    \item itemize2
-    \item itemize3
-\end{itemize}
+\subsection*{本研究の背景：本研究をなぜ研究するのか？}
+xxx
 
-\begin{enumerate}
-    \item enumerate1
-    \item enumerate2
-    \item enumerate3
-\end{enumerate}
+\subsection*{本研究が取り扱う課題：本研究によって何を解決するのか？}
+xxx
 
-図\ref{fig:tetsutaro-logo1}，図\ref{fig:tetsutaro-logo2}，図\ref{fig:tetsutaro-logo3}にテツ太郎ロゴを示す．
+\subsection*{本研究の提案：どういう方法で課題を解決するのか？}
+xxx
 
-\begin{figure}[tb]
-    \centering
-    \includegraphics[clip,width=5cm]{assets/introduction/tetsutaro-logo.png}
-    \caption{テツ太郎ロゴ}
-    \label{fig:tetsutaro-logo1}
-\end{figure}
-
-
-\begin{figure}[tb]
-    \begin{minipage}[b]{0.45\linewidth}
-        \centering
-        \includegraphics[width=30mm]{assets/introduction/tetsutaro-logo.png}
-        \subcaption{テツ太郎ロゴ2}
-        \label{fig:tetsutaro-logo2}
-    \end{minipage}
-    \begin{minipage}[b]{0.45\linewidth}
-        \centering
-        \includegraphics[width=30mm]{assets/introduction/tetsutaro-logo.png}
-        \subcaption{テツ太郎ロゴ3}
-        \label{fig:tetsutaro-logo3}
-    \end{minipage}
-    \caption{テツ太郎ロゴ}
-\end{figure}
-
-表\ref{tab:example}に表の例を示す．
+\subsection*{先行・関連研究と比較して，何が違うのか？}
+アドバイス：先行・関連研究をまとめて，表\ref{tab:novelty}のようにまとめて比較できると
+本研究の立ち位置が整理がしやすいです．
 
 \begin{table}[tb]
-    \caption{表の例}
-    \label{tab:example}
-    \hbox to\hsize{\hfil
-        \begin{tabular}{l|lll}\hline\hline
-                 & column1  & column2  & column3  \\\hline
-            row1 & item 1,1 & item 2,1 & ---      \\
-            row2 & ---      & item 2,2 & item 3,2 \\
-            row3 & item 1,3 & item 2,3 & item 3,3 \\
-            row4 & item 1,4 & item 2,4 & item 3,4 \\\hline
-        \end{tabular}\hfil}
+    \centering
+    \begin{tabular}{c|cc}
+        \hline \hline
+        手法 & 観点A & 観点B \\
+        \hline
+        既存手法1（引用） & △ & × \\
+        既存手法2（引用） & ◯ & × \\
+        提案手法 & ◎ & ◎ \\
+        \hline 
+    \end{tabular}
+    \caption{既存手法と本研究の提案手法の比較}
+    \label{tab:novelty}
 \end{table}
 
-ソースコードの例をListing\ref{list:example}に示す．
+\section{論文の執筆順序}
+論文を「はじめに」から順に書くのは大変です．
+そのため，研究の全体像を把握した上で，以下の順序で論文を書くことをおすすめします．
+無論，この順序に従う必要はありません．
 
-\begin{figure}[tb]
-    \begin{lstlisting}[language=Python, caption={ソースコードの例}, label={list:example}]
-import numpy as np
-import matplotlib.pyplot as plt
+\begin{enumerate}
+    \item 謝辞
+    \item 研究背景
+    \item 準備・予備調査
+    \item 実装
+    \item 評価
+    \item 考察と今後の展望
+    \item はじめに・おわりに
+    \item 概要
+\end{enumerate}
 
-x = np.linspace(0, 2*np.pi)
-y = np.sin(x)
-\end{lstlisting}
-\end{figure}
-
-
+\section{「はじめに」を書く際のアドバイス}
+\begin{itemize}
+    \item 書き出しを「近年」ではじめるのは，読み手によって近年が示す時間軸が異なるため禁止．何を実現する上で何が重要なのか，分野において何が重要なのかを本研究のコンセプトに紐づけて一言で書いてみましょう．例：「テキストからの画像生成タスクにおいて，入力テキストによって生成画像がどのように変化するか利用者に理解しやすいことは重要である．」など．
+    \item 各段落の最初の一文だけをつなげておおよその流れが理解できるように書きましょう．つまり，まず各段落の最初の一文だけを書いてストーリーが通っているかを教員と一緒に確認し，OKが出たら各段落に詳細な内容を肉付けしていく，という手順で書いてみてください（これは「はじめに」に限らず，原稿全体で同様の手順で進めるのが理想的です．）．
+\end{itemize}2
