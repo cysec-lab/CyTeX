@@ -1,8 +1,10 @@
 {
   "recommendations": [
-    "ms-ceintl.vscode-language-pack-ja",
-    "github.copilot",
-    "mhutchie.git-graph",
     "james-yu.latex-workshop",
+    "ms-ceintl.vscode-language-pack-ja",
+    "mhutchie.git-graph",
+    "eamodio.gitlens",
+    "github.copilot",
+    "GitHub.codespaces"
   ]
 }

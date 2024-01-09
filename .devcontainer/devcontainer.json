@@ -11,7 +11,9 @@
             },
             "extensions": [
 				"james-yu.latex-workshop",
-				"MS-CEINTL.vscode-language-pack-ja"
+				"MS-CEINTL.vscode-language-pack-ja",
+                "mhutchie.git-graph",
+                "eamodio.gitlens"
 			]
         }
     }
