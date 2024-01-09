@@ -1,8 +1,8 @@
 version: "3.8"
 services:
   ubuntu-texlive-ja:
-    # image: korosuke613/ubuntu-texlive-ja-devcontainer
-    build: .
+    image: ran350/cytex-texlive:latest
+    # build: .
     command: sleep infinity
     volumes:
       - ../:/workdir
