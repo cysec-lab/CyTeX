@@ -1,12 +1,12 @@
-version: "3"
+version: "3.8"
 services:
   ubuntu-texlive-ja:
-    image: korosuke613/ubuntu-texlive-ja-devcontainer
-    #build: .
-    command: sleep infinity
+    # image: korosuke613/ubuntu-texlive-ja-devcontainer
+    build: .
+    # command: sleep infinity
     volumes:
       - ../:/workdir
-      - ~/.gitconfig:/root/.gitconfig
-      - ./.latexmkrc:/root/.latexmkrc
+      # - ~/.gitconfig:/root/.gitconfig
+      # - ./.latexmkrc:/root/.latexmkrc
     environment:
       SHELL: "/bin/bash"

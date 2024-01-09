@@ -11,9 +11,7 @@
             },
             "extensions": [
 				"james-yu.latex-workshop",
-				"streetsidesoftware.code-spell-checker",
-				"MS-CEINTL.vscode-language-pack-ja",
-				"taichi.vscode-textlint"
+				"MS-CEINTL.vscode-language-pack-ja"
 			]
         }
     }
