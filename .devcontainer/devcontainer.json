@@ -1,7 +1,7 @@
 {
     "name": "cytex",
     "dockerComposeFile": "docker-compose.yml",
-    "service": "ubuntu-texlive-ja",
+    "service": "cytex-texlive",
     "workspaceFolder": "/workdir",
     "shutdownAction": "stopCompose",
     "customizations": {
