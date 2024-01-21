@@ -1,0 +1,20 @@
+{
+    "name": "cytex",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "cytex-texlive",
+    "workspaceFolder": "/workdir",
+    "shutdownAction": "stopCompose",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "extensions.verifySignature": false
+            },
+            "extensions": [
+				"james-yu.latex-workshop",
+				"MS-CEINTL.vscode-language-pack-ja",
+                "mhutchie.git-graph",
+                "eamodio.gitlens"
+			]
+        }
+    }
+}
