@@ -8,11 +8,12 @@ CyTeX（読み方：さいてふ）は、GitHub Codespaces を用いた、環境
 ローカル環境に texlive や Docker をインストールせずに、GitHub Codespace 上のクラウド開発環境に LaTeX 環境を構築できます。
 また、devContainer を用いて、Codespace 環境ではなくローカル環境に構築することも可能です。
 
-<div align="center">
-  
-https://github.com/cysec-lab/CyTeX/assets/56746857/589c5472-79f7-4e35-9753-ef0329050764
-
-</div>
+<video src="https://github.com/cysec-lab/CyTeX/assets/56746857/bad34299-8bd5-4af6-ad09-ab8bbeea3f5d">
+  <img
+    src="https://github.com/cysec-lab/CyTeX/assets/56746857/bad34299-8bd5-4af6-ad09-ab8bbeea3f5d"
+    alt="demo video"
+  />
+</video>
 
 ## 使用手順
 
