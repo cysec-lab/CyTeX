@@ -1,7 +1,7 @@
 {
     "name": "cytex",
     "dockerComposeFile": "docker-compose.yml",
-    "service": "ubuntu-texlive-ja",
+    "service": "cytex-texlive",
     "workspaceFolder": "/workdir",
     "shutdownAction": "stopCompose",
     "customizations": {
@@ -10,11 +10,11 @@
                 "extensions.verifySignature": false
             },
             "extensions": [
-				"james-yu.latex-workshop",
-				"streetsidesoftware.code-spell-checker",
-				"MS-CEINTL.vscode-language-pack-ja",
-				"taichi.vscode-textlint"
-			]
+                "james-yu.latex-workshop",
+                "MS-CEINTL.vscode-language-pack-ja",
+                "mhutchie.git-graph",
+                "eamodio.gitlens"
+            ]
         }
     }
 }
