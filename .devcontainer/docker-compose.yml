@@ -5,10 +5,10 @@ services:
     # build: . # if you want to build the image locally
     command: sleep infinity
     volumes:
-      - ../:/workdir
+      - ../:/workspaces
       - ./.latexmkrc:/root/.latexmkrc
-      - ~/.gitconfig:/root/.gitconfig
-      - /etc/gitconfig:/etc/gitconfig
-      - /.codespaces/:/.codespaces
+      # - ~/.gitconfig:/root/.gitconfig
+      # - /etc/gitconfig:/etc/gitconfig
+      # - /.codespaces/:/.codespaces
     environment:
       SHELL: "/bin/bash"
