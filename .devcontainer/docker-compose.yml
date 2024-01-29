@@ -9,5 +9,6 @@ services:
       - ./.latexmkrc:/root/.latexmkrc
       - ~/.gitconfig:/root/.gitconfig
       - /etc/gitconfig:/etc/gitconfig
+      - /.codespaces/:/.codespaces
     environment:
       SHELL: "/bin/bash"
