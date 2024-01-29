@@ -8,5 +8,6 @@ services:
       - ../:/workdir
       - ./.latexmkrc:/root/.latexmkrc
       - ~/.gitconfig:/root/.gitconfig
+      - /etc/gitconfig:/etc/gitconfig
     environment:
       SHELL: "/bin/bash"
