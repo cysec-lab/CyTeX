@@ -2,7 +2,7 @@
     "name": "cytex",
     "dockerComposeFile": "docker-compose.yml",
     "service": "cytex-texlive",
-    "workspaceFolder": "/workdir",
+    "workspaceFolder": "/workspaces/CyTeX",
     "shutdownAction": "stopCompose",
     "customizations": {
         "vscode": {

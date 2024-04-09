@@ -3,10 +3,9 @@ services:
   cytex-texlive:
     image: ran350/cytex-texlive:0.0.1
     # build: . # if you want to build the image locally
-    command: sleep infinity
     volumes:
-      - ../:/workdir
+      - ../:/workspaces/CyTeX
       - ./.latexmkrc:/root/.latexmkrc
-      - ~/.gitconfig:/root/.gitconfig
+    tty: true
     environment:
       SHELL: "/bin/bash"
