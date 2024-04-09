@@ -4,7 +4,7 @@ services:
     image: ran350/cytex-texlive:0.0.1
     # build: . # if you want to build the image locally
     volumes:
-      - ../:/workspaces
+      - ../:/workspaces/CyTeX
       - ./.latexmkrc:/root/.latexmkrc
     tty: true
     environment:
