@@ -1,34 +1,41 @@
 # ran350/cytex-texlive
 # https://hub.docker.com/r/ran350/cytex-texlive/
 
-FROM ubuntu:18.04
+FROM ubuntu:24.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update && apt-get install -y \
-    xdvik-ja \ 
+RUN apt-get update && apt-get install -y 
+
+# install texlive
+RUN apt-get install -y \
     evince \
     texlive-full \
-    # texlive-lang-cjk \
-    # texlive-latex-extra \
-    # texlive-extra-utils \
     latexmk \
     language-pack-ja \
-    wget \
-    xzdec \
-    git \
+    xzdec
+# xdvik-ja \ 
+# texlive-lang-cjk \
+# texlive-latex-extra \
+# texlive-extra-utils
+
+RUN apt-get install -y \
     cpanminus \
     make \
-    perl \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+    perl
+
+# install utilities
+RUN apt-get install -y \
+    git \
+    wget
+
+# clean up
+RUN rm -rf /var/lib/apt/lists/* \
+    && apt-get clean
+
 
 RUN tlmgr init-usertree
-RUN kanji-config-updmap-sys ipaex
-
-WORKDIR /workdir
-
-VOLUME ["/workdir"]
+# RUN kanji-config-updmap-sys ipaex
 
 CMD ["bash"]
 
