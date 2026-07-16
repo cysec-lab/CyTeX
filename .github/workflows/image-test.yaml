@@ -6,6 +6,7 @@ on:
       - .devcontainer/Dockerfile
       - .devcontainer/docker-compose.yml
       - .devcontainer/.latexmkrc
+      - .github/workflows/image-test.yaml
 
 jobs:
   build-check:
