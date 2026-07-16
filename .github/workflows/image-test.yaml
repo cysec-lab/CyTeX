@@ -1,0 +1,28 @@
+name: PR build check
+
+on:
+  pull_request:
+    paths:
+      - .devcontainer/Dockerfile
+      - .devcontainer/docker-compose.yml
+      - .devcontainer/.latexmkrc
+
+jobs:
+  build-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build image (docker build)
+        run: docker build -t ran350/cytex-texlive:0.1.0 .devcontainer
+
+      - name: Generate PDF (latexmk)
+        run: |
+          rm -f out/main.pdf
+          docker compose -f .devcontainer/docker-compose.yml run --rm \
+            -w /workspaces/CyTeX cytex-texlive \
+            latexmk -f -gg -synctex=1 -interaction=nonstopmode -file-line-error -outdir=out main.tex
+
+      - name: Verify PDF was generated
+        run: test -f out/main.pdf
