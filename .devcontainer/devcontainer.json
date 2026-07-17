@@ -1,6 +1,6 @@
 {
     "name": "cytex",
-    "dockerComposeFile": "docker-compose.yml",
+    "dockerComposeFile": "compose.yml",
     "service": "cytex-texlive",
     "workspaceFolder": "/workspaces/CyTeX",
     "shutdownAction": "stopCompose",

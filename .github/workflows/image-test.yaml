@@ -4,7 +4,7 @@ on:
   pull_request:
     paths:
       - .devcontainer/Dockerfile
-      - .devcontainer/docker-compose.yml
+      - .devcontainer/compose.yml
       - .devcontainer/.latexmkrc
       - .github/workflows/image-test.yaml
 
@@ -21,7 +21,7 @@ jobs:
       - name: Generate PDF (latexmk)
         run: |
           rm -f out/main.pdf
-          docker compose -f .devcontainer/docker-compose.yml run --rm \
+          docker compose -f .devcontainer/compose.yml run --rm \
             -w /workspaces/CyTeX cytex-texlive \
             latexmk -f -gg -synctex=1 -interaction=nonstopmode -file-line-error -outdir=out main.tex
 
